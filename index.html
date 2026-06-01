@@ -274,18 +274,10 @@ body {
 .community-note-text em { color: rgba(6,199,85,0.6); font-style: normal; }
 
 /* ══ PHOTO SLOT ══ */
-.photo-slot { max-width: 460px; margin: 40px auto 0; padding: 0 20px; }
-.photo-slot-inner {
-  border: 1px dashed rgba(201,169,97,0.15); height: 200px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 8px;
-  background: rgba(201,169,97,0.018);
-}
-.photo-slot-icon { font-size: 20px; opacity: 0.2; }
-.photo-slot-label {
-  font-family: 'Didact Gothic', sans-serif; font-size: 9px;
-  letter-spacing: 3px; color: rgba(201,169,97,0.22); text-transform: uppercase;
-}
+
+
+
+
 
 /* ══ CONTENT CARDS ══ */
 .content-card {
@@ -342,55 +334,7 @@ body {
 .reveal.in { opacity:1; transform:none; }
 
 
-/* ══ CLOSING REDESIGN ══ */
-.closing {
-  max-width: 460px; margin: 52px auto 0;
-  padding: 0 20px 0;
-}
-.closing-inner {
-  border: 1px solid rgba(201,169,97,0.12);
-  background: rgba(201,169,97,0.02);
-  padding: 32px 24px 28px;
-  display: flex; flex-direction: column; align-items: center;
-  gap: 20px;
-}
-.closing-lozenge {
-  font-size: 10px; color: rgba(201,169,97,0.35);
-  letter-spacing: 4px;
-}
-.closing-block {
-  width: 100%; text-align: left;
-}
-.closing-block-icon {
-  font-size: 16px; margin-bottom: 8px;
-  letter-spacing: 4px;
-}
-.closing-block-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px; font-weight: 400;
-  color: rgba(255,255,255,0.90);
-  margin-bottom: 8px; letter-spacing: 0.5px;
-}
-.closing-block-desc {
-  font-family: 'EB Garamond', serif;
-  font-style: italic; font-size: 14px;
-  color: rgba(255,255,255,0.58);
-  line-height: 1.9;
-}
-.closing-block-desc em {
-  color: rgba(201,169,97,0.85); font-style: normal;
-  font-family: 'Noto Serif TC', serif; font-size: 13px;
-}
-.closing-divider {
-  width: 100%; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201,169,97,0.2), transparent);
-}
-.closing-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 13px; letter-spacing: 6px;
-  color: rgba(201,169,97,0.25);
-  text-align: center; padding-top: 4px;
-}
+
 
 /* 強制黑底，防止系統 light mode 干擾 */
 html, body, .page, .wrap, .path-panel,
@@ -550,6 +494,36 @@ body { background: #070707 !important; }
   transition: all 0.25s;
 }
 .cd-cta:hover { background: rgba(201,169,97,0.12); border-color: var(--gold); }
+
+
+/* ══ CLOSING SIMPLE ══ */
+.closing-simple {
+  max-width: 460px; margin: 48px auto 0;
+  padding: 36px 24px 48px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+}
+.closing-simple-rule {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; margin-bottom: 28px;
+}
+.csr-line { width: 40px; height: 1px; background: rgba(201,169,97,0.15); }
+.csr-dot { width: 4px; height: 4px; background: rgba(201,169,97,0.35); transform: rotate(45deg); }
+.csp {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 14px; font-weight: 300;
+  color: rgba(255,255,255,0.60);
+  line-height: 2; letter-spacing: 0.5px;
+}
+.csp em {
+  color: rgba(201,169,97,0.85); font-style: normal; font-weight: 400;
+}
+.csp-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; letter-spacing: 6px;
+  color: rgba(201,169,97,0.2);
+  margin-top: 32px;
+}
 
 </style>
 </head>
@@ -722,11 +696,7 @@ body { background: #070707 !important; }
           <div class="cta-btn-arr">›</div>
         </a>
         <a href="https://line.me/ti/g2/q9Ho1w80IazkjowuTPzEmP5IlqsXSFBP3uerFg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="cta-btn line-cta">
-          <div class="cta-btn-icon" style="background:#06C755; border:none;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-            </svg>
-          </div>
+          <div class="cta-btn-icon" style="background:#06C755; border:none; font-size:20px;">👥</div>
           <div class="cta-btn-body">
             <div class="cta-btn-label">LINE 社群入口</div>
             <div class="cta-btn-name">✦ Sampler 智囊站</div>
@@ -793,8 +763,7 @@ body { background: #070707 !important; }
       </div>
     </div>
   </div>
-<div class="photo-slot-label">Photo · 預留照片位置</div>
-    </div>
+</div>
   </div>
 
   <!-- ❷ 內容頻道 -->
@@ -875,26 +844,7 @@ body { background: #070707 !important; }
     </a>
   </div>
 
-  <!-- CLOSING -->
-  <div class="closing reveal">
-    <div class="closing-inner">
-      <div class="closing-lozenge">◆</div>
-      <div class="closing-block">
-        <div class="closing-block-icon">▶ 🎙</div>
-        <div class="closing-block-title">不確定從哪裡開始？</div>
-        <div class="closing-block-desc">建議先從 <em>《給芮迷》</em> 或 <em>《芮力話》</em> 入門<br>用影音和聲音先感受 G.R.A.C.E. 的思維方式</div>
-      </div>
-      <div class="closing-divider"></div>
-      <div class="closing-block">
-        <div class="closing-block-icon">💬</div>
-        <div class="closing-block-title">已有明確目標？</div>
-        <div class="closing-block-desc">請直接進入對應的 <em>諮詢窗口</em><br>我們會為你安排最適合的下一步</div>
-      </div>
-      <div class="closing-logo">G.R.A.C.E.</div>
-    </div>
-  </div>
-
-</div>
+  
 
 <script>
 
@@ -936,5 +886,26 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
   obs.observe(el);
 });
 </script>
+
+  <!-- CLOSING -->
+  <div class="closing-simple reveal">
+    <div class="closing-simple-rule">
+      <div class="csr-line"></div>
+      <div class="csr-dot"></div>
+      <div class="csr-line"></div>
+    </div>
+    <p class="csp">
+      若不確定該從哪一個開始<br>
+      建議先從 <em>《給芮迷》</em> 或 <em>《芮力話》</em> 入門
+    </p>
+    <p class="csp" style="margin-top:20px;">
+      若已有明確目標<br>
+      請直接進入對應的 <em>諮詢窗口</em>
+    </p>
+    <div class="csp-logo">G.R.A.C.E.</div>
+  </div>
+
+</div>
+
 </body>
 </html>
